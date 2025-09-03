@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Aaradhya Web Solutions</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/additional-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-nav">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Aaradhya Web Solutions Logo">
+                <span>Aaradhya Web Solutions</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="page-header">
+            <h1>Contact Us</h1>
+        </section>
+        <section class="contact-section fade-in">
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone (Optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="basic">Basic Web Package</option>
+                        <option value="advance">Advance Web Package</option>
+                        <option value="application">Web Application Package</option>
+                        <option value="other">Other Inquiry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your project requirements..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+                <div id="formMsg" class="form-msg"></div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/images/logo.png" alt="Aaradhya Web Solutions Logo">
+                <span>Aaradhya Web Solutions</span>
+            </div>
+            <div class="footer-info">
+                <!-- <p>Address: 123, Business Street, Mumbai, India</p> -->
+                <p>Phone: +91-9137496196</p>
+                <p>Email: info@aaradhyawebsolutions.com</p>
+                <div class="social-icons">
+                    <a href="#"><img src="assets/images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="assets/images/google.png" alt="Google"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Aaradhya Web Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
